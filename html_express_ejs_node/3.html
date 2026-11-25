@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Formulario de atribuicao de participantes ao projeto</title>
+</head>
+<body>
+    <h1>Atribuir particpante a projeto</h1>
+    <form action="#" method="POST">
+        <div>
+            <label for="projeto">Selecionar projeto</label>
+            <select id="projeto" name="projeto" required>
+                <option value="">Selecione um projeto</option>
+                <option value="proj1">POrtal de notcias</option>
+                <option value="proj2">Sistema de entrega</option>
+                <option value="proj3">Aplicacao de moveis</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Participantess e papeis na equipe</label><br>
+            <small>Selecione os participantes e indique o respectivo papel no projeto</small><br><br>
+
+            <div>
+                <input type="checkbox" id="part1" name="participantes[]" value="ana_silva">
+                <label for="part1">Ana silva</label>
+                <label for="papel_ana">Papel: </label>
+                <input type="text" id="papel_ana" name="papel_ana" placeholder="EX: gestora de projetos...">
+            </div>
+            <div>
+                <input type="checkbox" id="part1" name="participantes[]" value="ana_silva">
+                <label for="part1">Ana silva</label>
+                <label for="papel_ana">Papel: </label>
+                <input type="text" id="papel_ana" name="papel_ana" placeholder="EX: gestora de projetos...">
+            </div>
+            <div>
+                <input type="checkbox" id="part1" name="participantes[]" value="ana_silva">
+                <label for="part1">Ana silva</label>
+                <label for="papel_ana">Papel: </label>
+                <input type="text" id="papel_ana" name="papel_ana" placeholder="EX: gestora de projetos...">
+            </div>
+
+        </div>
+    </form>
+</body>    
+</html>

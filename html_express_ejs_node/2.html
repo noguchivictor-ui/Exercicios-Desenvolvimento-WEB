@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>FORMULARIO DE CADASTRO DE PROJETO</title>
+</head>
+<body>
+    <h1>CADASTRO DE PROJETO</h1>
+    <form action="#" method="POST">
+        <div>
+            <label for="nome">NOME</label>
+            <input type="text" id="nome" name="nome" required placeholder="digite seu nome">
+        </div>
+        <br>
+        <div>
+            <label for="descricao">Descricao</label>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" required placeholder="area para esclarecer melhor o projeto"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="area_tematica">Area tematica</label>
+            <input type="text" id="area_tematica" name="area_tematica" required placeholder="Ex: tecnologia,saude,educacao">
+        </div>
+        <br>
+        <div>
+            <label for="responsavel">Responsavel</label>
+            <select id="responsavel" name="responsavel" required>
+                <option value="">Selecione um responsavel cadastrado</option>
+                <option value="1">Ana Silva</option>
+                <option value="2">Carlos Alencar</option>
+                <option value="3">Victor Naguchi</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="data_inicio">Data de inicio</label>
+            <input type="date" id="data_inicio" name="data_inicio" required>
+        </div>
+        <br>
+         <div>
+            <label for="data_fim">Data de fim</label>
+            <input type="date" id="data_fim" name="data_fim" required>
+        </div>
+
+        <button type="submit">Salvar projeto</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device", initial-scale="1.0">
+    <title>Cadastro de Usuario</title>
+</head>
+<body>
+    <form action="/cadastrar" method="POST">
+        <h1>Area de Cadastro</h1>
+        <br>
+        <h2>Complete os dados:</h2>
+        <br>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="digite aqui">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="digite aqui">
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="digite aqui">
+        </div>
+        <br>
+        <div>
+            <label for="projeto">Projeto:</label>
+            <select id="projeto" name="projeto">
+                <option value="">Selecione uma opcao</option>
+                <option value="gerador">Gerador</option>
+                <option value="robocop">Robocop</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Participantes</label>
+            <small>selecione os desejdos</small>
+            <div>
+                <label for="participante1">Osvaldo</label>
+                <input type="checkbox" id="participante1" name="participante1" value="Osvaldo">
+                <br>
+                <label for="participante2">Yeager</label>
+                <input type="checkbox" id="participante2" name="participante2" value="Yeager">
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="data_inicio">Dataa inicial</label>
+            <input type="date" id="data_inicio" name="data_inicio">
+        </div>
+        <br>
+        <div>
+            <label for="data_fim">Data Final</label>
+            <input type="date" id="data_fim" name="data_fim">
+        </div>
+        <br>
+        <div>
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo">
+        </div>
+        <br>
+        <div>
+            <label for="descricao">Descricao:</label>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="digite aqui"></textarea>
+        </div>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+
+</body>
+</html>

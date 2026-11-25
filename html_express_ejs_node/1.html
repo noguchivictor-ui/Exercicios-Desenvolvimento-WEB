@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Formulario de Cadastro de Pessoa</title>
+</head>
+<body>
+    <h1>Cadastro de Pessoa</h1>
+    <form action="#" method="POST">
+
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite o nome">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" required placeholder="EX: email@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="EX:(00)00000-0000">
+        </div>
+        <br>
+        <div>
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required placeholder="000000000-00">
+        </div>
+        <br>
+        <div>
+            <label for="funcao">Funcao</label>
+            <input type="text" id="funcao" name="funcao" required placeholder="(EX: lider,ajudante,....)">
+        </div>
+        <div>
+            <label for="area_atuacao">Area de atuacao</label>
+            <select id="area_atuacao" name="area_atuacao" required>
+                <option value="">Selecione a area...</option>
+                <option value="lideranca">Lideranca</option>
+                <option value="colaborador">colaborador</option>
+                <option value="voluntario">Voluntario</option>
+
+            </select>
+        </div>
+        <br>
+
+        <button type="submit">Salvar Cadastro</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Formulario de Agenda de Ativivdades</title>
+</head>
+<body>
+    <h1>Preencher agenda de atividades</h1>
+    <form action="#" method="POST">
+        <div class="mb-3">
+            <label for="projeto" class="form-label">Selecionar Projeto</label>
+            <select class="form-select" id="projeto" name="projeto" required>
+                <option value="">Selecione um projeto</option>
+                <option value="proj1">Sistema de entregas</option>
+                <option value="proj2">Cenario de requerimentos</option>
+                <option value="proj3">Cartografia</option>
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Cadastro de Titulo</label>
+            <input class="form-control" type="text" id="titulo" name="titulo">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descricao</label>
+            <br>
+            <textarea class="form-control" id="descricao" name="descricao" rows="4" cols="50" placeholder="area para complementar projeto..."></textarea>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label" for="data_inicio">Data de Inicio</label>
+                <input class="form-control" type="date" id="data_inicio" name="data_inicio" required>
+            </div>
+            <br>
+            <div>
+                <label class="form-label" for="data_fim">Data Final</label>
+                <input class="form-control" type="date" id="data_fim" name="data_fim" required>
+            </div>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label" for="local">Local</label>
+            <input class="form-control" type="text" id="local" name="local" required placeholder="local...">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label>Selecao: </label>
+            <small>selecione os participantes desejados</small>
+
+            <div class="form-check">
+                <label for="part1" class="form-check-label">Ana Maria</label>
+                <input type="checkbox" id="part1" name="participantes[]" class="form-check-input" value="1">
+            </div>
+            <div class="form-check">
+                <label for="part1" class="form-check-label">Ana Maria</label>
+                <input type="checkbox" id="part1" name="participantes[]" class="form-check-input" value="1">
+            </div>
+            <div class="form-check">
+                <label for="part1" class="form-check-label">Ana Maria</label>
+                <input type="checkbox" id="part1" name="participantes[]" class="form-check-input" value="1">
+            </div>
+        </div>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

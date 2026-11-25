@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>FORMULARIO DE CADASTRO DE PESSOA</title>
+</head>
+<body>
+    <h1>Cadastrar Pessoa</h1>
+    <form action="/cadastrar" method="POST">
+        <div class="">
+            <label for="nome">Preencher nome:</label>
+            <input type="text" id="nome" name="nome" class="" required placeholder="digite seu nome">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" class="" required placeholder="digite seu email">
+        </div>
+        <br>
+        <div class="" >
+            <label class="" for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" class="" required placeholder="digite seu numero">
+        </div>
+        <br>
+        <div class="">
+            <label for="area_atuacao">Area de Atuacao:</label>
+            <select id="area_atuacao" name="area_atuacao" class="" required>
+                <option value="">Selecione uma opcao</option>
+                <option value="area1">Lideranca</option>
+                <option value="area2">Colaborador</option>
+                <option value="area3">Voluntario</option>
+            </select>
+        </div>
+        <br>
+        <div class="">
+            <div class="">
+                <label>Projetos existentes:</label><br>
+                <small>Selecione os projetos desejados</small>
+                <div class="">
+                    <input type="checkbox" id="proj1" name="proj1" class="">
+                    <label class="" for="proj1">Sisitema de busca</label>
+                </div>
+                <div class="">
+                    <input type="checkbox" id="proj2" name="proj2" class="">
+                    <label class="" for="proj2">Planilha de cadastro</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="">
+            <label class="" for="dataInicio">Data de Inicio</label>
+            <input type="date" id="dataInicio" name="dataInicio" class="" required>
+        </div>
+        <br>
+        <div class="">
+            <label class="" for="descricao">Desccricao</label>
+            <br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" class="" placeholder="area para complementar..."></textarea>
+        </div>
+        <br>
+        <button class="button" type="submit">Buscar</button>
+
+    </form>
+</body>
+
+</html>
