@@ -1,4 +1,4 @@
-# Desenvolvimento Web — Exercícios e Práticas
+# Desenvolvimento Web — Exercícios e Práticas - Victor Ryu Noguchi
 
 Repositório dedicado aos exercícios, listas práticas e mini-projetos desenvolvidos na disciplina de **Desenvolvimento Web**, abrangendo lógica de programação em JavaScript, integração com APIs externas e desenvolvimento back-end com **Node.js**, **Express** e **EJS**.
 
